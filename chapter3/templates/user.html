@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}Profile of {{ name | capitalize }} - Flasky{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h2>Hello, {{ name | capitalize }} !</h2>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Flasky{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h2>欢迎来到Flasky!</h2>
+</div>
+<div>
+    <p>您的浏览器UA为: <br /> <span class="text-success">{{ ua }}</span></p>
+    <p>
+        当前时间: <span class="text-info">{{ moment(current_time).format('LLL') }}</span> .
+        距离现在: <span class="text-info">{{ moment(current_time).fromNow(refresh=True) }}</span> .
+    </p>
+</div>
+{% endblock %}

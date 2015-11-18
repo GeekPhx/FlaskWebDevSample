@@ -1,0 +1,59 @@
+
+#
+Command-Line Options with Flask-Script
+
+pip install flask-script
+
+from flask.ext.script import Manager manager = Manager(app)
+
+
+#
+
+
+pip install flask-bootstrap
+
+from flask.ext.bootstrap import Bootstrap
+bootstrap = Bootstrap(app)
+
+
+#
+Localization of Dates and Times with Flask-Moment
+
+pip install flask-moment
+
+from flask.ext.moment import Moment
+moment = Moment(app)
+
+
+#
+The Flask-WTF extension makes working with web forms
+
+pip install flask-wtf
+
+from flask.ext.wtf import Form
+from wtforms import StringField, SubmitField
+from wtforms.validators import Required
+
+
+#
+Database Management with Flask-SQLAlchemy
+
+pip install flask-sqlalchemy
+
+
+#
+Database Migrations with Flask-Migrate
+
+pip install flask-migrate
+
+from flask.ext.migrate import Migrate, MigrateCommand
+migrate = Migrate(app, db)
+manager.add_command('db', MigrateCommand)
+
+
+#
+Email Support with Flask-Mail
+
+pip install flask-mail
+from flask.ext.mail import Mail mail = Mail(app)
+
